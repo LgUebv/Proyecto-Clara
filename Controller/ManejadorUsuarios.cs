@@ -45,19 +45,11 @@ namespace Controller
             return b;
         }
 
-        public void BotonBorrar(DataGridView tabla, string filtro)
+        public void Mostrar(DataGridView tabla, string filtro)
         {
             tabla.Columns.Clear();
             tabla.DataSource = f.Mostrar($"select * from v_usuarios where nombre like '%{filtro}%'", "Usuarios").Tables[0];
             tabla.Columns.Insert(4, Boton("Editar", Color.Red));
-            tabla.AutoResizeColumns();
-            tabla.AutoResizeRows();
-        }
-
-        public void BotonEditar(DataGridView tabla, string filtro)
-        {
-            tabla.Columns.Clear();
-            tabla.DataSource = f.Mostrar($"select * from v_usuarios where nombre like '%{filtro}%'", "Usuarios").Tables[0];
             tabla.Columns.Insert(5, Boton("Borrar", Color.Green));
             tabla.AutoResizeColumns();
             tabla.AutoResizeRows();

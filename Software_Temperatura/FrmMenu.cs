@@ -64,6 +64,12 @@ namespace Software_Temperatura
             e.Graphics.DrawString(texto, fuente, brocha, ubicacion);
         }
 
+        private void txtUsuarios_TextChanged(object sender, EventArgs e)
+        {
+            dtgvUsuarios.Visible = true;
+            mu.Mostrar(dtgvUsuarios, txtUsuarios.Text);
+        }
+
         private void dtgvUsuarios_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             fila = e.RowIndex; columna = e.ColumnIndex;
