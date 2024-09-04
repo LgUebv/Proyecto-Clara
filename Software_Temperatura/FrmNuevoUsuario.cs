@@ -30,12 +30,20 @@ namespace Software_Temperatura
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            if (FrmMenu.ID > 0)
+            {
+                mu.Modificar(txtUsername, txtPassword, txtNombre, txtApellidos, cmbNivel, FrmMenu.ID);
+            }
+            else
+            {
+                mu.Guardar(txtUsername, txtPassword, txtNombre, txtApellidos, cmbNivel);
+            }
+            Close();
         }
     }
 }

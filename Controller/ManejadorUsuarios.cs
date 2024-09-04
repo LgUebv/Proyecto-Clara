@@ -12,9 +12,9 @@ namespace Controller
     public class ManejadorUsuarios
     {
         Funciones f = new Funciones();
-        public void GuardarApartado(TextBox Username, TextBox Contraseña, TextBox Nombre, TextBox Apellido, ComboBox Nivel)
+        public void Guardar(TextBox Username, TextBox Contraseña, TextBox Nombre, TextBox Apellido, ComboBox Nivel)
         {
-            MessageBox.Show(f.Guardar($"insert into usuarios values ('{Username.Text}', sha1('{Contraseña.Text})', '{Nombre.Text}', '{Apellido.Text}', {Nivel.Text})"),
+            MessageBox.Show(f.Guardar($"insert into usuarios (Username, Password, Nombre, Apellido, Nivel) values ('{Username.Text}', sha1('{Contraseña.Text}'), '{Nombre.Text}', '{Apellido.Text}', {Nivel.Text})"),
                 "Atencion!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
