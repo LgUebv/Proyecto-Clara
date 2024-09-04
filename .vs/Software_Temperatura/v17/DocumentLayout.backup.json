@@ -3,31 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|c:\\users\\josem\\source\\repos\\software_temperatura\\software_temperatura\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|c:\\users\\josem\\source\\repos\\software_temperatura\\software_temperatura\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|C:\\Users\\josem\\source\\repos\\Software_Temperatura\\software_temperatura\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEFFF568-EFF7-4EE1-B858-452385AF9B40}|Controller\\Controller.csproj|C:\\Users\\josem\\source\\repos\\Software_Temperatura\\controller\\manejadorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEFFF568-EFF7-4EE1-B858-452385AF9B40}|Controller\\Controller.csproj|solutionrelative:controller\\manejadorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Software_Temperatura||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|C:\\Users\\josem\\source\\repos\\Software_Temperatura\\software_temperatura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|C:\\Users\\josem\\source\\repos\\Software_Temperatura\\software_temperatura\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|C:\\Users\\josem\\source\\repos\\Software_Temperatura\\software_temperatura\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|C:\\Users\\josem\\source\\repos\\Software_Temperatura\\software_temperatura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EA009-AD20-4D22-AA1C-618716CF198F}|Software_Temperatura\\Software_Temperatura.csproj|solutionrelative:software_temperatura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,89 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Software_Temperatura",
-              "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\Software_Temperatura.csproj",
-              "RelativeDocumentMoniker": "Software_Temperatura\\Software_Temperatura.csproj",
-              "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\Software_Temperatura.csproj",
-              "RelativeToolTip": "Software_Temperatura\\Software_Temperatura.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-01T01:47:43.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManejadorLogin.cs",
-              "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Controller\\ManejadorLogin.cs",
-              "RelativeDocumentMoniker": "Controller\\ManejadorLogin.cs",
-              "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Controller\\ManejadorLogin.cs",
-              "RelativeToolTip": "Controller\\ManejadorLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T01:10:19.29Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "Software_Temperatura\\FrmLogin.cs",
-              "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmLogin.cs",
-              "RelativeToolTip": "Software_Temperatura\\FrmLogin.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T01:00:39.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "FrmMenu.cs",
               "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmMenu.cs",
               "RelativeDocumentMoniker": "Software_Temperatura\\FrmMenu.cs",
               "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmMenu.cs",
               "RelativeToolTip": "Software_Temperatura\\FrmMenu.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T00:28:22.859Z",
+              "WhenOpened": "2024-09-04T00:08:49.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "FrmMenu.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmMenu.cs",
               "RelativeDocumentMoniker": "Software_Temperatura\\FrmMenu.cs",
               "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmMenu.cs [Dise\u00F1o]",
               "RelativeToolTip": "Software_Temperatura\\FrmMenu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T01:00:23.274Z"
+              "WhenOpened": "2024-09-01T01:00:23.274Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "FrmLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmLogin.cs",
               "RelativeDocumentMoniker": "Software_Temperatura\\FrmLogin.cs",
               "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\FrmLogin.cs [Dise\u00F1o]",
               "RelativeToolTip": "Software_Temperatura\\FrmLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T00:58:26.865Z"
+              "WhenOpened": "2024-09-01T00:58:26.865Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\Program.cs",
               "RelativeDocumentMoniker": "Software_Temperatura\\Program.cs",
               "ToolTip": "C:\\Users\\josem\\source\\repos\\Software_Temperatura\\Software_Temperatura\\Program.cs",
               "RelativeToolTip": "Software_Temperatura\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T00:57:11.847Z"
+              "WhenOpened": "2024-09-01T00:57:11.847Z",
+              "EditorCaption": ""
             }
           ]
         }

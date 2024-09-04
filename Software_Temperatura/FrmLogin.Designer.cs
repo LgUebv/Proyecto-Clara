@@ -34,10 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblExit = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,16 +104,6 @@
             this.panel1.Size = new System.Drawing.Size(316, 351);
             this.panel1.TabIndex = 13;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Software_Temperatura.Properties.Resources.IconoLogin_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 188);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -145,6 +135,16 @@
             this.lblExit.TabIndex = 10;
             this.lblExit.Text = "x";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Software_Temperatura.Properties.Resources.IconoLogin_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(67, 91);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 188);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
