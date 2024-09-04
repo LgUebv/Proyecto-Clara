@@ -90,6 +90,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tmrTemps = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.btnS5Z3 = new Software_Temperatura.Controls.ToggleButtons();
             this.btnS4Z3 = new Software_Temperatura.Controls.ToggleButtons();
             this.btnS1Z3 = new Software_Temperatura.Controls.ToggleButtons();
@@ -234,6 +235,7 @@
             // pnlSensores
             // 
             this.pnlSensores.AutoScroll = true;
+            this.pnlSensores.Controls.Add(this.button1);
             this.pnlSensores.Controls.Add(this.panel4);
             this.pnlSensores.Controls.Add(this.panel3);
             this.pnlSensores.Controls.Add(this.panel2);
@@ -254,7 +256,7 @@
             this.panel4.Controls.Add(this.panel17);
             this.panel4.Controls.Add(this.panel19);
             this.panel4.Controls.Add(this.panel18);
-            this.panel4.Location = new System.Drawing.Point(0, 423);
+            this.panel4.Location = new System.Drawing.Point(3, 413);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1064, 179);
@@ -262,7 +264,7 @@
             // 
             // panel15
             // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel15.Controls.Add(this.label33);
             this.panel15.Controls.Add(this.btnS5Z3);
             this.panel15.Controls.Add(this.label14);
@@ -300,7 +302,7 @@
             // 
             // panel16
             // 
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel16.Controls.Add(this.label32);
             this.panel16.Controls.Add(this.btnS4Z3);
             this.panel16.Controls.Add(this.label15);
@@ -329,7 +331,7 @@
             // 
             // panel17
             // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel17.Controls.Add(this.label29);
             this.panel17.Controls.Add(this.btnS1Z3);
             this.panel17.Controls.Add(this.label16);
@@ -358,7 +360,7 @@
             // 
             // panel19
             // 
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel19.Controls.Add(this.label30);
             this.panel19.Controls.Add(this.btnS2Z3);
             this.panel19.Controls.Add(this.label18);
@@ -387,7 +389,7 @@
             // 
             // panel18
             // 
-            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel18.Controls.Add(this.label31);
             this.panel18.Controls.Add(this.btnS3Z3);
             this.panel18.Controls.Add(this.label17);
@@ -424,7 +426,7 @@
             this.panel3.Controls.Add(this.panel14);
             this.panel3.Controls.Add(this.panel12);
             this.panel3.Controls.Add(this.panel13);
-            this.panel3.Location = new System.Drawing.Point(0, 218);
+            this.panel3.Location = new System.Drawing.Point(3, 209);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1064, 179);
@@ -432,7 +434,7 @@
             // 
             // panel10
             // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel10.Controls.Add(this.label28);
             this.panel10.Controls.Add(this.btnS5Z2);
             this.panel10.Controls.Add(this.label9);
@@ -470,7 +472,7 @@
             // 
             // panel11
             // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel11.Controls.Add(this.label27);
             this.panel11.Controls.Add(this.btnS4Z2);
             this.panel11.Controls.Add(this.label10);
@@ -499,7 +501,7 @@
             // 
             // panel14
             // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel14.Controls.Add(this.label24);
             this.panel14.Controls.Add(this.btnS1Z2);
             this.panel14.Controls.Add(this.label13);
@@ -528,7 +530,7 @@
             // 
             // panel12
             // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel12.Controls.Add(this.label26);
             this.panel12.Controls.Add(this.btnS3Z2);
             this.panel12.Controls.Add(this.label11);
@@ -557,7 +559,7 @@
             // 
             // panel13
             // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel13.Controls.Add(this.label25);
             this.panel13.Controls.Add(this.btnS2Z2);
             this.panel13.Controls.Add(this.label12);
@@ -594,7 +596,7 @@
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 15);
+            this.panel2.Location = new System.Drawing.Point(3, 5);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1064, 179);
@@ -602,7 +604,7 @@
             // 
             // panel9
             // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel9.Controls.Add(this.label23);
             this.panel9.Controls.Add(this.btnS5Z1);
             this.panel9.Controls.Add(this.label8);
@@ -631,7 +633,7 @@
             // 
             // panel8
             // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.btnS4Z1);
             this.panel8.Controls.Add(this.label7);
@@ -660,7 +662,7 @@
             // 
             // panel7
             // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel7.Controls.Add(this.label21);
             this.panel7.Controls.Add(this.btnS3Z1);
             this.panel7.Controls.Add(this.label6);
@@ -689,7 +691,7 @@
             // 
             // panel6
             // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel6.Controls.Add(this.label20);
             this.panel6.Controls.Add(this.btnS2Z1);
             this.panel6.Controls.Add(this.label5);
@@ -718,7 +720,7 @@
             // 
             // panel5
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.btnS1Z1);
             this.panel5.Controls.Add(this.label4);
@@ -758,6 +760,17 @@
             // 
             this.tmrTemps.Interval = 1000;
             this.tmrTemps.Tick += new System.EventHandler(this.tmrTemps_Tick);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(394, 609);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(320, 50);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Consultar Temperaturas";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnS5Z3
             // 
@@ -1125,6 +1138,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Timer tmrTemps;
+        private System.Windows.Forms.Button button1;
     }
 }
 

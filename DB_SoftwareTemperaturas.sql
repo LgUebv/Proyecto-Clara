@@ -21,6 +21,7 @@ create table Registro_Temperatura (
     Fecha_Hora timestamp default current_timestamp,
     Estado_Sensor boolean
 );
+alter table Registro_Temperatura drop column Estado_Sensor;
 
 show tables;
 describe Registro_Temperatura;
@@ -62,3 +63,5 @@ call p_validar('Pepin2',sha1('123'));
 call p_validar('Pepin3',sha1('123'));
 
 show databases;
+
+create view v_Usuarios AS select Username, Nombre, Apellido, Nivel from usuarios;
