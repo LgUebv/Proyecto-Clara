@@ -72,6 +72,12 @@
     <Compile Include="FrmNuevoUsuario.Designer.cs">
       <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVistaTemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistaTemps.Designer.cs">
+      <DependentUpon>FrmVistaTemps.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">

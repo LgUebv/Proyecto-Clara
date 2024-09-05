@@ -16,12 +16,11 @@ alter table usuarios modify column Nivel varchar(1);
 create table Registro_Temperatura (
     ID int primary key auto_increment,
     Numero_Sensor int,
-    Zona int,
     Temperatura int,
     Fecha_Hora timestamp default current_timestamp,
     Estado_Sensor boolean
 );
-alter table Registro_Temperatura drop column Estado_Sensor;
+drop table Registro_Temperatura;
 
 show tables;
 describe Registro_Temperatura;
@@ -65,3 +64,19 @@ call p_validar('Pepin3',sha1('123'));
 show databases;
 
 create view v_Usuarios AS select Username, Nombre, Apellido, Nivel from usuarios;
+
+select * from Registro_Temperatura;
+
+create view V_Temps_General AS
+    SELECT 
+        CONCAT('Sensor ', Numero_Sensor) AS Numero_Sensor,
+        IFNULL(Temperatura, '---') AS Temperatura,
+        CASE 
+            WHEN Estado_Sensor = 1 THEN 'Activado'
+            WHEN Estado_Sensor = 0 THEN 'Desactivado'
+        END AS Estado_Sensor,
+        Fecha_Hora
+    FROM 
+        Registro_Temperatura;
+
+drop view if exists Vista_Temps_General;

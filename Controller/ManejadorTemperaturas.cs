@@ -1,33 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess;
 using Label = System.Windows.Forms.Label;
 
 namespace Controller
 {
     public class ManejadorTemperaturas
     {
-        // Declarar los arreglos necesarios
         private bool[] sensoresActivados;
         private double[] temperaturas;
         private Label[] labels;
 
-        // Constructor para inicializar los arreglos y recibir referencias desde el formulario
+        Funciones f = new Funciones();
+
         public ManejadorTemperaturas(bool[] sensoresActivados, Label[] labels)
         {
             this.sensoresActivados = sensoresActivados;
             this.labels = labels;
-            this.temperaturas = new double[labels.Length]; // Inicializa el arreglo de temperaturas
+            this.temperaturas = new double[labels.Length];
         }
 
-        // Manejador del evento Tick del temporizador
-
-
-        // Método para generar valores aleatorios
         public void GenerarValoresAleatorios()
         {
             Random random = new Random();
@@ -35,25 +33,51 @@ namespace Controller
             {
                 if (sensoresActivados[i])
                 {
-                    temperaturas[i] = random.NextDouble() * 100; // Genera una temperatura entre 0 y 100
+                    temperaturas[i] = random.NextDouble() * 100;
                 }
             }
         }
 
-        // Método para actualizar las etiquetas
         public void ActualizarEtiquetas()
         {
             for (int i = 0; i < labels.Length; i++)
             {
                 if (sensoresActivados[i])
                 {
-                    labels[i].Text = temperaturas[i].ToString("F2"); // Mostrar temperatura con 2 decimales
+                    labels[i].Text = temperaturas[i].ToString("F2");
                 }
                 else
                 {
-                    labels[i].Text = "---"; // Mostrar indicador para sensores inactivos
+                    labels[i].Text = "---";
                 }
             }
+        }
+
+        public void GuardarTemps()
+        {
+            for (int i = 0; i < temperaturas.Length; i++)
+            {
+                int estadoSensor = sensoresActivados[i] ? 1 : 0;
+
+                if (sensoresActivados[i])
+                {
+                    // Guardar temperatura si el sensor está activado
+                    f.Guardar($"INSERT INTO Registro_Temperatura (Numero_Sensor, Temperatura, Estado_Sensor) VALUES ({i + 1}, {temperaturas[i].ToString("F2")}, '{estadoSensor}')");
+                }
+                else
+                {
+                    // Guardar solo el estado si el sensor está desactivado
+                    f.Guardar($"INSERT INTO Registro_Temperatura (Numero_Sensor, Estado_Sensor) VALUES ({i + 1}, '{estadoSensor}')");
+                }
+            }
+        }
+
+        public void Mostrar(DataGridView tabla, string filtro)
+        {
+            tabla.Columns.Clear();
+            tabla.DataSource = f.Mostrar($"select * from V_Temps_General where  like '%{filtro}%'", "Usuarios").Tables[0];
+            tabla.AutoResizeColumns();
+            tabla.AutoResizeRows();
         }
     }
 }
