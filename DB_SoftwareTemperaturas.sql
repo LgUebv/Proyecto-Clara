@@ -80,3 +80,17 @@ create view V_Temps_General AS
         Registro_Temperatura;
 
 drop view if exists Vista_Temps_General;
+
+create view V_Temps_Activados as
+    SELECT 
+        CONCAT('Sensor ', Numero_Sensor) AS Numero_Sensor,
+        IFNULL(Temperatura, '---') AS Temperatura,
+        CASE 
+            WHEN Estado_Sensor = 1 THEN 'Activado'
+            ELSE 'Desactivado'
+        END AS Estado_Sensor,
+        Fecha_Hora
+    FROM 
+        Registro_Temperatura
+    WHERE 
+        Estado_Sensor = 1;

@@ -71,13 +71,5 @@ namespace Controller
                 }
             }
         }
-
-        public void Mostrar(DataGridView tabla, string filtro)
-        {
-            tabla.Columns.Clear();
-            tabla.DataSource = f.Mostrar($"select * from V_Temps_General where  like '%{filtro}%'", "Usuarios").Tables[0];
-            tabla.AutoResizeColumns();
-            tabla.AutoResizeRows();
-        }
     }
 }

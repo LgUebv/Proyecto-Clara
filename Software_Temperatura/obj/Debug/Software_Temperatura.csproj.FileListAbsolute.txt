@@ -45,3 +45,4 @@ C:\Users\josem\source\repos\Software_Temperatura\Software_Temperatura\bin\Debug\
 C:\Users\josem\source\repos\Software_Temperatura\Software_Temperatura\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\josem\source\repos\Software_Temperatura\Software_Temperatura\obj\Debug\Software_Temperatura.FrmMenu.resources
 C:\Users\josem\source\repos\Software_Temperatura\Software_Temperatura\obj\Debug\Software_Temperatura.FrmNuevoUsuario.resources
+C:\Users\josem\source\repos\Software_Temperatura\Software_Temperatura\obj\Debug\Software_Temperatura.FrmVistaTemps.resources

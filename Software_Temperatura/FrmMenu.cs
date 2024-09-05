@@ -119,7 +119,8 @@ namespace Software_Temperatura
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            FrmVistaTemps RegistrosTemps = new FrmVistaTemps();
+            RegistrosTemps.ShowDialog();
         }
 
         private void ptbSensores_Paint(object sender, PaintEventArgs e)

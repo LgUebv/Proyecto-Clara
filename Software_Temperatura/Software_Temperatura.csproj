@@ -89,6 +89,9 @@
     <EmbeddedResource Include="FrmNuevoUsuario.resx">
       <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistaTemps.resx">
+      <DependentUpon>FrmVistaTemps.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -120,6 +123,10 @@
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{eefff568-eff7-4ee1-b858-452385af9b40}</Project>
       <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{f763f239-bf56-4e35-984b-4697425727b8}</Project>
+      <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
