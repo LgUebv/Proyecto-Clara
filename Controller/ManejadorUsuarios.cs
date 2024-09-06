@@ -30,7 +30,7 @@ namespace Controller
         }
         public void Modificar(TextBox Username, TextBox Contraseña, TextBox Nombre, TextBox Apellido, ComboBox Nivel, int ID)
         {
-            MessageBox.Show(f.Modificar($"update usuarios set Username = '{Username.Text}', Password = sha1('{Contraseña.Text}'), Nombre = '{Nombre.Text}', Apellido = '{Apellido.Text}', Nivel = {Nivel.Text}"),
+            MessageBox.Show(f.Modificar($"update usuarios set Username = '{Username.Text}', Password = sha1('{Contraseña.Text}'), Nombre = '{Nombre.Text}', Apellido = '{Apellido.Text}', Nivel = {Nivel.Text} where ID = {ID}"),
                 "Atencion!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -49,8 +49,8 @@ namespace Controller
         {
             tabla.Columns.Clear();
             tabla.DataSource = f.Mostrar($"select * from v_usuarios where nombre like '%{filtro}%'", "Usuarios").Tables[0];
-            tabla.Columns.Insert(4, Boton("Editar", Color.Red));
-            tabla.Columns.Insert(5, Boton("Borrar", Color.Green));
+            tabla.Columns.Insert(6, Boton("Borrar", Color.Red));
+            tabla.Columns.Insert(7, Boton("Editar", Color.Green));
             tabla.AutoResizeColumns();
             tabla.AutoResizeRows();
         }

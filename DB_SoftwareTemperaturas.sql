@@ -63,7 +63,8 @@ call p_validar('Pepin3',sha1('123'));
 
 show databases;
 
-create view v_Usuarios AS select Username, Nombre, Apellido, Nivel from usuarios;
+create view v_Usuarios AS select ID, Username, Password, Nombre, Apellido, Nivel from usuarios;
+drop view v_Usuarios;
 
 select * from Registro_Temperatura;
 
