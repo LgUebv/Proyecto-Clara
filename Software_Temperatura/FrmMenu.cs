@@ -69,7 +69,7 @@ namespace Software_Temperatura
 
         private void btnS1Z2_CheckedChanged(object sender, EventArgs e)
         {
-            sensoresActivados[1] = !sensoresActivados[5];
+            sensoresActivados[1] = !sensoresActivados[1];
         }
 
         private void tmrTemps_Tick(object sender, EventArgs e)
@@ -87,6 +87,7 @@ namespace Software_Temperatura
 
         private void tmrSaveTemps_Tick(object sender, EventArgs e)
         {
+            //configurado a 15,000 mls para que de cada 15s
             mt.GuardarTemps();
         }
 

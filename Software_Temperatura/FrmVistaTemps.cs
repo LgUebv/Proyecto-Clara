@@ -27,7 +27,6 @@ namespace Software_Temperatura
 
         private void txtSensores_TextChanged(object sender, EventArgs e)
         {
-            dtgvSensores.Visible = true;
             MostrarActivos(dtgvSensores, txtSensores.Text);
         }
 

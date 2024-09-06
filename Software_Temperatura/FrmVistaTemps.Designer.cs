@@ -41,7 +41,7 @@
             // 
             this.dtgvSensores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSensores.Location = new System.Drawing.Point(14, 76);
-            this.dtgvSensores.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtgvSensores.Margin = new System.Windows.Forms.Padding(5);
             this.dtgvSensores.Name = "dtgvSensores";
             this.dtgvSensores.Size = new System.Drawing.Size(741, 377);
             this.dtgvSensores.TabIndex = 0;
@@ -117,7 +117,7 @@
             this.Controls.Add(this.dtgvSensores);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmVistaTemps";
             this.Text = "FrmVistaTemps";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSensores)).EndInit();

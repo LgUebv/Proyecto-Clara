@@ -46,16 +46,17 @@ END;
 
 insert into usuarios (Username, Password, Nombre, Apellido, Nivel) values
 (
-    'Pepin1',sha1('123'),'Pepin','Gempleis',1
+    'Admin',sha1('123'),'Jose','Vega',1
 ),
 (
-    'Pepin2',sha1('123'),'Pepin','Gempleis',2
+    'Ingeniero',sha1('123'),'Manuel','Torres',2
 ),
 (
-    'Pepin3',sha1('123'),'Pepin','Gempleis',3
+    'Empleado',sha1('123'),'Juan','Camaney',3
 );
 
 select * from usuarios;
+delete from usuarios;
 
 call p_validar('Pepin1',sha1('123'));
 call p_validar('Pepin2',sha1('123'));
@@ -64,7 +65,6 @@ call p_validar('Pepin3',sha1('123'));
 show databases;
 
 create view v_Usuarios AS select ID, Username, Password, Nombre, Apellido, Nivel from usuarios;
-drop view v_Usuarios;
 
 select * from Registro_Temperatura;
 
@@ -80,8 +80,6 @@ create view V_Temps_General AS
     FROM 
         Registro_Temperatura;
 
-drop view if exists Vista_Temps_General;
-
 create view V_Temps_Activados as
     SELECT 
         CONCAT('Sensor ', Numero_Sensor) AS Numero_Sensor,
@@ -95,3 +93,6 @@ create view V_Temps_Activados as
         Registro_Temperatura
     WHERE 
         Estado_Sensor = 1;
+
+select * from Registro_Temperatura;
+delete from Registro_Temperatura;
