@@ -6,6 +6,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using DataAccess;
 using Label = System.Windows.Forms.Label;
 
@@ -16,14 +17,16 @@ namespace Controller
         private bool[] sensoresActivados;
         private double[] temperaturas;
         private Label[] labels;
+        private Chart[] charts;
 
         Funciones f = new Funciones();
 
-        public ManejadorTemperaturas(bool[] sensoresActivados, Label[] labels)
+        public ManejadorTemperaturas(bool[] sensoresActivados, Label[] labels, Chart[] charts)
         {
             this.sensoresActivados = sensoresActivados;
             this.labels = labels;
             this.temperaturas = new double[labels.Length];
+            this.charts = charts;
         }
 
         public void GenerarValoresAleatorios()
@@ -34,7 +37,21 @@ namespace Controller
                 if (sensoresActivados[i])
                 {
                     temperaturas[i] = random.NextDouble() * 100;
+
+                    // Actualizar el Chart para cada sensor
+                    charts[i].Series[$"Sensor {i + 1}"].Points.AddY(temperaturas[i]);
+
+                    if (charts[i].Series[$"Sensor {i + 1}"].Points.Count > 100)
+                    {
+                        charts[i].Series[$"Sensor {i + 1}"].Points.RemoveAt(0);
+                    }
                 }
+            }
+
+            // Forzar el redibujado de los Charts
+            foreach (var chart in charts)
+            {
+                chart.Invalidate();
             }
         }
 

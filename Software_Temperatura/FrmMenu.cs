@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using Controller;
 
 namespace Software_Temperatura
@@ -30,7 +31,8 @@ namespace Software_Temperatura
             ConfigurarMenu();
 
             Label[] labels = { label19, label24 };
-            mt = new ManejadorTemperaturas(sensoresActivados, labels);
+            Chart[] charts = { chrSensor1, chrSensor2 };
+            mt = new ManejadorTemperaturas(sensoresActivados, labels, charts);
             tmrTemps.Start();
             tmrSaveTemps.Start();
         }
