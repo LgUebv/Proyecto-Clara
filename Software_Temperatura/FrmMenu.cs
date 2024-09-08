@@ -22,7 +22,7 @@ namespace Software_Temperatura
         public static string Username, Password, Nombre, Apellido = "";
         int fila = 0, columna = 0;
 
-        bool[] sensoresActivados = new bool[15];
+        bool[] sensoresActivados = new bool[2];
 
         public FrmMenu(int nivelUsuario)
         {

@@ -23,15 +23,6 @@ namespace Controller
             return resultado;
         }
 
-        public int ObtenerNivelUsuario(string user)
-        {
-            string query = $"SELECT Nivel FROM usuarios WHERE Username = '{user}'";
-            string nivelUsuarioStr = f.ObtenerDato(query, "usuarios", "Nivel");
-            int nivelUsuario = 0;
-            int.TryParse(nivelUsuarioStr, out nivelUsuario);
-            return nivelUsuario;
-        }
-
         public static string Sha1(string texto)
         {
             SHA1 sha1 = SHA1CryptoServiceProvider.Create();

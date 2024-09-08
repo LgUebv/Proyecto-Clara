@@ -37,8 +37,6 @@ namespace Controller
                 if (sensoresActivados[i])
                 {
                     temperaturas[i] = random.NextDouble() * 100;
-
-                    // Actualizar el Chart para cada sensor
                     charts[i].Series[$"Sensor {i + 1}"].Points.AddY(temperaturas[i]);
 
                     if (charts[i].Series[$"Sensor {i + 1}"].Points.Count > 100)
@@ -47,8 +45,6 @@ namespace Controller
                     }
                 }
             }
-
-            // Forzar el redibujado de los Charts
             foreach (var chart in charts)
             {
                 chart.Invalidate();
@@ -78,12 +74,10 @@ namespace Controller
 
                 if (sensoresActivados[i])
                 {
-                    // Guardar temperatura si el sensor está activado
                     f.Guardar($"INSERT INTO Registro_Temperatura (Numero_Sensor, Temperatura, Estado_Sensor) VALUES ({i + 1}, {temperaturas[i].ToString("F2")}, '{estadoSensor}')");
                 }
                 else
                 {
-                    // Guardar solo el estado si el sensor está desactivado
                     f.Guardar($"INSERT INTO Registro_Temperatura (Numero_Sensor, Estado_Sensor) VALUES ({i + 1}, '{estadoSensor}')");
                 }
             }
