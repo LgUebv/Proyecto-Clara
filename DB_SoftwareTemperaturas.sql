@@ -56,6 +56,7 @@ insert into usuarios (Username, Password, Nombre, Apellido, Nivel) values
 );
 
 select * from usuarios;
+describe usuarios;
 delete from usuarios;
 
 call p_validar('Pepin1',sha1('123'));
@@ -95,4 +96,4 @@ create view V_Temps_Activados as
         Estado_Sensor = 1;
 
 select * from Registro_Temperatura;
-delete from Registro_Temperatura;
+describe Registro_Temperatura;
