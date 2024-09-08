@@ -87,7 +87,6 @@ namespace Software_Temperatura
 
         private void tmrSaveTemps_Tick(object sender, EventArgs e)
         {
-            //configurado a 15,000 mls para que de cada 15s
             mt.GuardarTemps();
         }
 

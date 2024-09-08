@@ -19,7 +19,7 @@ namespace Controller
             DataSet r = f.Mostrar($"call p_validar('{_user}', '{Sha1(_pass)}')", "usuarios");
             DataTable dt = r.Tables[0];
             resultado[0] = dt.Rows[0]["rs"].ToString();
-            resultado[1] = dt.Rows[0]["Nivel"].ToString(); // Devuelve nivel como string
+            resultado[1] = dt.Rows[0]["Nivel"].ToString();
             return resultado;
         }
 
